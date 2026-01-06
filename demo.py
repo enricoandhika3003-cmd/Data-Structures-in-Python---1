@@ -33,8 +33,8 @@ print(profile.values())
 
 meeting = [
     ["Ms", "Kshitun", "Teacher"],
-    [" ", "Enrico", "Student"]
-    [" ", "Bienve", "Student"]
+    [" ", "Enrico", "Student"],
+    [" ", "Bienve", "Student"],
     [" ", "Saavi", "Student"]
 ]
 
@@ -44,7 +44,7 @@ for participant in meeting:
     title = participant[0]
     name = participant[1]
     role = participant[2]
-    meeting_dict = {"Name": title+name, "Role": role}
+    meeting_dict[title+name] = role
 
 print("Codingal Lesson: ")
 print(meeting_dict)
